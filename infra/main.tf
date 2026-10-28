@@ -28,12 +28,12 @@ resource "docker_image" "postgres" {
 }
 
 resource "docker_container" "postgres" {
-  name  = "edge-config-postgress"
+  name  = "edge-config-postgres"
   image = docker_image.postgres.image_id
 
   env = [
-    "POSTGRRES_DB=edgeconfig",
-    "POSTGRESS_USER=edgeconfig",
+    "POSTGRES_DB=edgeconfig",
+    "POSTGRES_USER=edgeconfig",
     "POSTGRES_PASSWORD=local-practice-only"
   ]
 
