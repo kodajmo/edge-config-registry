@@ -1,0 +1,19 @@
+.DS_Store
+
+# secrets
+.env
+.env.*
+!.env.example
+
+
+# folder
+/edge-config-api.zip
+
+*.md
+
+# Editor settings; personal, not project config
+.idea/
+.vscode/
+
+# Local runtime logs
+*.log
